@@ -61,28 +61,37 @@ const LinkWrapper = styled.ul`
   .nav-link {
     display: block;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.2rem;
     color: var(--darkGray);
+    font-size: 1rem;
     text-transform: capitalize;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.5s linear;
     &:hover {
       background: var(--darkGray);
       color: var(--white);
-      padding: 0.5rem 1rem 0.5rem 1.3rem;
+      padding: 1rem 1.2rem;
     }
   }
-  height: ${props => (props.open ? "250px" : "0px")};
+  li:nth-child(6) {
+    background: var(--mainBlue);
+  }
+  li:nth-child(6) > a {
+    color: var(--white);
+  }
+  height: ${props => (props.open ? "300px" : "0px")};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   @media (min-width: 768px) {
     height: auto;
     display: flex;
-    margin: 0 auto;
     .nav-link:hover {
-      background: var(--white);
-      padding: 0.5rem 1rem 0.5rem 1rem;
-      color: var(--lightGray);
+        background: var(--white);
+        color: var(--mainBlue);
+    }
+    li:nth-child(6) > a:hover {
+      color: var(--mainBlue);
     }
   }
 `

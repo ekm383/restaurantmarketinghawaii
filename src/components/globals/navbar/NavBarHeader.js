@@ -1,16 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../../../images/restaurant-marketing-hawaii-logo.png"
-import { FaAlignRight } from "react-icons/fa"
+import { FaBars } from "react-icons/fa"
 import styled from "styled-components"
 
 const NavBarHeader = ({ handleNavBar }) => {
   return (
     <HeaderWrapper>
       <Link to="/">
-        <img className="logo" src={logo} alt="Restaurant Marketing Hawaii" />
+        <p className="logo">RMH</p>
       </Link>
-      <FaAlignRight
+      <FaBars
         className="toggle-icon"
         onClick={() => {
           handleNavBar()
@@ -22,6 +21,7 @@ const NavBarHeader = ({ handleNavBar }) => {
 
 const HeaderWrapper = styled.div`
   padding: 0.4rem;
+  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,13 +31,19 @@ const HeaderWrapper = styled.div`
     cursor: pointer;
   }
   @media (min-width: 768px) {
-    toggle-icon {
+    .toggle-icon {
       display: none;
     }
     padding: 0.4rem 1rem;
   }
   .logo {
-    width: 25%;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    color: var(--mainBlue)
+  }
+  a {
+    text-decoration: none;
   }
 `
 

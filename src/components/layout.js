@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import "./bootstrap.min.css"
 import "./layout.css"
 import NavBar from "../components/globals/navbar/NavBar"
 
