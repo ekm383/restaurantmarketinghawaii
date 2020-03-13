@@ -1,0 +1,90 @@
+import React, { Component } from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
+
+class NavBarLinks extends Component {
+  state = {
+    links: [
+      {
+        id: 0,
+        path: "/",
+        text: "home",
+      },
+      {
+        id: 1,
+        path: "/#budget",
+        text: "budget",
+      },
+      {
+        id: 2,
+        path: "/#services",
+        text: "services",
+      },
+      {
+        id: 3,
+        path: "/#features",
+        text: "features",
+      },
+      {
+        id: 4,
+        path: "/contact",
+        text: "contact",
+      },
+      {
+        id: 5,
+        path: "/sign-up",
+        text: "sign up",
+      },
+    ],
+  }
+  render() {
+    return (
+      <LinkWrapper open={this.props.navBarOpen}>
+        {this.state.links.map(item => {
+          return (
+            <li key={item.id}>
+              <Link to={item.path} className="nav-link">
+                {item.text}
+              </Link>
+            </li>
+          )
+        })}
+      </LinkWrapper>
+    )
+  }
+}
+
+const LinkWrapper = styled.ul`
+  li {
+    list-style-type: none;
+  }
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--darkGray);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    &:hover {
+      background: var(--darkGray);
+      color: var(--white);
+      padding: 0.5rem 1rem 0.5rem 1.3rem;
+    }
+  }
+  height: ${props => (props.open ? "250px" : "0px")};
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  @media (min-width: 768px) {
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    .nav-link:hover {
+      background: var(--white);
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      color: var(--lightGray);
+    }
+  }
+`
+
+export default NavBarLinks

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Restaurant Marketing Hawaii`,
+    description: `We are a full-service digital marketing agency designed specifically for Hawaii's Restaurants. From content creation to e-commerce we provide all the services needed to stay relevant. `,
+    author: `@restaurantmarketinghawaii`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,8 +13,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
