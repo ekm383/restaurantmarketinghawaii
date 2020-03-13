@@ -61,9 +61,9 @@ const LinkWrapper = styled.ul`
   .nav-link {
     display: block;
     text-decoration: none;
-    padding: 1rem 1.2rem;
+    padding: 0.5rem 1.2rem;
     color: var(--darkGray);
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: capitalize;
     letter-spacing: 1px;
     cursor: pointer;
@@ -71,7 +71,7 @@ const LinkWrapper = styled.ul`
     &:hover {
       background: var(--darkGray);
       color: var(--white);
-      padding: 1rem 1.2rem;
+      padding: 0.5rem 1.2rem;
     }
   }
   li:nth-child(6) {
@@ -80,15 +80,20 @@ const LinkWrapper = styled.ul`
   li:nth-child(6) > a {
     color: var(--white);
   }
-  height: ${props => (props.open ? "300px" : "0px")};
+  height: ${props => (props.open ? "330px" : "0px")};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   @media (min-width: 768px) {
     height: auto;
     display: flex;
+    .nav-link{
+      padding: 1rem 1.2rem;
+      font-size: 1rem;
+    }
     .nav-link:hover {
         background: var(--white);
         color: var(--mainBlue);
+        padding: 1rem 1.2rem;
     }
     li:nth-child(6) > a:hover {
       color: var(--mainBlue);

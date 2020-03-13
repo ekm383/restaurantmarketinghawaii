@@ -38,6 +38,7 @@ const HeaderWrapper = styled.div`
   }
   .logo {
     font-size: 1.5rem;
+    font-weight: 700;
     letter-spacing: 2px;
     margin-left: 10px;
     color: var(--mainBlue)
