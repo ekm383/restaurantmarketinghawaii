@@ -2,10 +2,10 @@ import React from "react"
 import Section from "../components/globals/section/Section"
 import styled from "styled-components"
 
-const Services1 = ({ header, content, img }) => {
+const Services1 = ({ header, content, img, style }) => {
   return (
     <Section>
-      <ServicesWrapper>
+      <ServicesWrapper style={style}>
         <div className="box content">
           <h2>{header}</h2>
           <p>{content}</p>
@@ -22,6 +22,7 @@ const Services1 = ({ header, content, img }) => {
 const ServicesWrapper = styled.div`
   display: flex;
   justify-content: center;
+  /* flex-direction: row-reverse; switchable when passed down */
   flex-wrap: wrap;
   h2 {
     font-size: 2.5rem;

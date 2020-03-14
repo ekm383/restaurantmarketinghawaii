@@ -17,3 +17,7 @@ body {
   background-color: var(--white);
   color: var(--darkGray);
 }
+
+a {
+  text-decoration: none;
+}

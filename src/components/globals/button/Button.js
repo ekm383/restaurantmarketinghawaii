@@ -22,6 +22,9 @@ const ButtonWrapper = styled.button`
     border: 1px solid var(--mainBlue);
     color: var(--mainBlue);
   }
+  &:focus {
+    outline: none;
+  }
 `
 
 export default Button
