@@ -1,14 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 
-const Section = ({ children }) => {
-  return <SectionWrapper>{children}</SectionWrapper>
+const Section = ({ children, style }) => {
+  return (
+    <SectionWrapper style={style}>
+      {children}
+    </SectionWrapper>
+  )
 }
 
 const SectionWrapper = styled.div`
-  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 90vw;
-  margin: 0 auto;
 `
 
 export default Section
