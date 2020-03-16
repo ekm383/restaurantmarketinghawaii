@@ -15,7 +15,22 @@
 body {
   font-family: "Open Sans";
   background-color: var(--white);
-  color: var(--darkGray);
+  color: var(--gray);
+}
+
+h4, h6 {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+
 }
 
 a {

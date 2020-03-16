@@ -15,7 +15,6 @@ const Services = ({ header, subheader, content, style }) => {
 
 const ServicesWrapper = styled.div`
   h2 {
-    font-size: 2.5rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -23,12 +22,8 @@ const ServicesWrapper = styled.div`
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
-  p {
-    line-height: 1.5rem;
-  }
   .box {
     width: 400px;
-    color: var(--gray);
   }
 `
 
