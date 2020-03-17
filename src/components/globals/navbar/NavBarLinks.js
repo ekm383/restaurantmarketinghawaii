@@ -68,15 +68,14 @@ const LinkWrapper = styled.ul`
     text-decoration: none;
     padding: 0.5rem 1.2rem;
     color: var(--gray);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-transform: capitalize;
-    letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.5s linear;
     &:hover {
       background: var(--darkGray);
       color: var(--white);
-      padding: 0.5rem 1.2rem;
+      padding: 0.5rem 1.5rem;
     }
   }
   li:nth-child(7) {
@@ -85,7 +84,7 @@ const LinkWrapper = styled.ul`
   li:nth-child(7) > a {
     color: var(--white);
   }
-  height: ${props => (props.open ? "239px" : "0px")};
+  height: ${props => (props.open ? "266px" : "0px")};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   @media (min-width: 768px) {
@@ -93,7 +92,7 @@ const LinkWrapper = styled.ul`
     display: flex;
     .nav-link {
       padding: 1rem 1.2rem;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
     .nav-link:hover {
       background: var(--white);

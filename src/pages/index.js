@@ -82,10 +82,18 @@ const IndexPage = () => (
       </SectionRow>
     </SectionRow>
 
-    <SectionRow id="pricing" style={{ height: "100vh" }}>
-      <SectionRow style={{ textAlign: "center" }}>
+    <SectionRow
+      id="pricing"
+      style={{ height: "100vh", flexDirection: "column" }}
+    >
+      <SectionRow
+        style={{
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      >
         <Banner
-          style={{ width: "90vw", marginBottom: "1.5rem" }}
+          style={{ margin: "0rem auto 2rem auto", width: "70vw" }}
           titleSmall="digital marketing package"
           subtitle="your customers will never leave your website when ordering online. With menu images, upsales, and social media integration, get the world's most powerful online ordering solution."
         />
@@ -121,8 +129,10 @@ const IndexPage = () => (
           feature="In-Store Marketing Collateral"
           content="(Takeout menus, etc.)"
         />
+      </SectionRow>
+      <SectionRow style={{ marginTop: "4rem" }}>
         <Link to="/sign-up">
-          <Button style={{ marginTop: "4rem" }}>Sign Up</Button>
+          <Button>SIGN UP</Button>
         </Link>
       </SectionRow>
     </SectionRow>

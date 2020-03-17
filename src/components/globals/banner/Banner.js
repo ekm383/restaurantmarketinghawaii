@@ -25,7 +25,9 @@ const BannerWrapper = styled.div`
     text-transform: uppercase;
   }
   .titleSmall {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.5rem;
   }
   .subtitle {
     font-size: 1rem;
