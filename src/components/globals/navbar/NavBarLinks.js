@@ -12,26 +12,31 @@ class NavBarLinks extends Component {
       },
       {
         id: 1,
-        path: "/#budget",
+        path: "#budget",
         text: "budget",
       },
       {
         id: 2,
-        path: "/#services",
+        path: "#services",
         text: "services",
       },
       {
         id: 3,
-        path: "/#features",
+        path: "#features",
         text: "features",
       },
       {
         id: 4,
+        path: "#pricing",
+        text: "pricing",
+      },
+      {
+        id: 5,
         path: "/contact",
         text: "contact",
       },
       {
-        id: 5,
+        id: 6,
         path: "/sign-up",
         text: "sign up",
       },
@@ -74,13 +79,13 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1.2rem;
     }
   }
-  li:nth-child(6) {
+  li:nth-child(7) {
     background: var(--mainBlue);
   }
-  li:nth-child(6) > a {
+  li:nth-child(7) > a {
     color: var(--white);
   }
-  height: ${props => (props.open ? "205px" : "0px")};
+  height: ${props => (props.open ? "239px" : "0px")};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   @media (min-width: 768px) {
@@ -95,7 +100,7 @@ const LinkWrapper = styled.ul`
       color: var(--mainBlue);
       padding: 1rem 1.2rem;
     }
-    li:nth-child(6) > a:hover {
+    li:nth-child(7) > a:hover {
       color: var(--mainBlue);
     }
   }

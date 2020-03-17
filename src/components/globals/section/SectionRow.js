@@ -1,8 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 
-const SectionRow = ({ children, style }) => {
-  return <SectionWrapper style={style}>{children}</SectionWrapper>
+const SectionRow = ({ id, children, style }) => {
+  return (
+    <SectionWrapper id={id} style={style}>
+      {children}
+    </SectionWrapper>
+  )
 }
 
 const SectionWrapper = styled.div`
@@ -12,7 +16,7 @@ const SectionWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 90vw;
-  margin: 4rem auto;
+  margin: 0rem auto;
 `
 
 export default SectionRow

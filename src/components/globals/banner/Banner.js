@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-const Banner = ({ title, subtitle, children }) => {
+const Banner = ({ style, title, titleSmall, subtitle, children }) => {
   return (
-    <BannerWrapper>
+    <BannerWrapper style={style}>
       <h1 className="title">{title}</h1>
+      <h2 className="titleSmall">{titleSmall}</h2>
       <h3 className="subtitle">{subtitle}</h3>
       {children}
     </BannerWrapper>
@@ -16,13 +17,15 @@ const BannerWrapper = styled.div`
   margin-left: 3rem;
   .title,
   .subtitle {
-    color: var(--mainBlue);
     margin-bottom: 10px;
   }
   .title {
     font-size: 4rem;
     line-height: 3.5rem;
     text-transform: uppercase;
+  }
+  .titleSmall {
+    font-size: 2.5rem;
   }
   .subtitle {
     font-size: 1rem;

@@ -27,55 +27,42 @@ const IndexPage = () => (
       </Banner>
     </HeaderIndex>
 
-    <SectionRow>
-      <Services
-        style={{ margin: "0px 10px" }}
-        header="custom website design & maintenance"
-        content="We have years of experience designing modern restaurant websites. We understand all the 3rd party technologies and plug-ins that it takes to make your business relevant in today’s market."
-      />
-      <img src={imgSample} alt="sample" width="400px" />
+    <SectionRow id="budget" style={{ height: "100vh" }}>
+      <SectionRow>
+        <img src={imgSample} alt="sample" width="400px" height="277px" />
+        <img src={imgSample} alt="sample" width="400px" height="277px" />
+      </SectionRow>
     </SectionRow>
 
-    <SectionRow style={{ alignItems: "flex-start" }}>
-      <SectionColumn>
+    <SectionRow id="services" style={{ height: "100vh" }}>
+      <SectionRow>
+        <Services
+          style={{ margin: "0px 10px" }}
+          header="custom website design & maintenance"
+          content="We have years of experience designing modern restaurant websites. We understand all the 3rd party technologies and plug-ins that it takes to make your business relevant in today’s market."
+        />
+        <img src={imgSample} alt="sample" width="400px" />
         <Services
           subheader="online ordering"
           content="We create convenient opportunities for potential or existing customers to order directly from your website and native custom branded iOS and Android apps."
         />
-        <img src={imgSample} alt="sample" width="400px" />
-      </SectionColumn>
-      <SectionColumn>
         <Services
           subheader="content creation"
           content="Do what you do best and let us take care of the rest. We always make sure there’s fresh video, photos, and copy to fill your website, social media account, monthly newsletter, In-store marketing and printed materials."
         />
-        <img src={imgSample} alt="sample" width="400px" />
-      </SectionColumn>
-    </SectionRow>
-
-    <SectionRow style={{ flexDirection: "row-reverse" }}>
-      <Services
-        style={{ margin: "0px 10px" }}
-        header="Social Media Management"
-        content="We make sure your message gets in front of the people who matter to your business. Our strategy leads potential and existing customers back to your website, keeping the inbound stream flowing."
-      />
-      <img src={imgSample} alt="sample" width="400px" />
-    </SectionRow>
-
-    <SectionRow>
-      <Services
-        style={{ margin: "0px 10px" }}
-        header="Agency Services"
-        content="Running operations should be the most important role as a restaurant owner or manager. Figuring out where to advertise and how much to budget shouldn’t slow you down. As a solution, we offer unlimited services at a monthly rate."
-      />
-      <img src={imgSample} alt="sample" width="400px" />
-    </SectionRow>
-
-    <SectionRow>
-      <SectionRow style={{ margin: "0px 25px" }}>
-        <h2>ONLINE ORDERING</h2>
+        <Services
+          subheader="Social Media Management"
+          content="We make sure your message gets in front of the people who matter to your business. Our strategy leads potential and existing customers back to your website, keeping the inbound stream flowing."
+        />
+        <Services
+          subheader="Agency Services"
+          content="Running operations should be the most important role as a restaurant owner or manager. Figuring out where to advertise and how much to budget shouldn’t slow you down. As a solution, we offer unlimited services at a monthly rate."
+        />
       </SectionRow>
-      <SectionRow style={{ margin: "10px 25px" }}>
+    </SectionRow>
+
+    <SectionRow id="features" style={{ height: "100vh" }}>
+      <SectionRow style={{ alignItems: "flex-start" }}>
         <Features
           feature="Website Menu Integration"
           content="Your customers will never leave your website when ordering online. With menu images, upsales and social media integration, get the world’s most powerful online ordering solution. iOS and Android App available."
@@ -95,68 +82,48 @@ const IndexPage = () => (
       </SectionRow>
     </SectionRow>
 
-    <SectionRow style={{ marginBottom: "0px" }}>
-      <SectionRow
-        style={{
-          width: "800px",
-          margin: "0px 25px 60px 25px",
-          textAlign: "center",
-        }}
-      >
-        <h2>DIGITAL MARKETING</h2>
-        <p>
-          Your customers will never leave your website when ordering online.
-          With menu images, upsales and social media integration, <br />
-          get the world’s most powerful online ordering solution.
-        </p>
-      </SectionRow>
-      <SectionRow style={{ marginTop: "0px", marginBottom: "0px" }}>
-        <SectionRow
-          style={{
-            width: "800px",
-            textAlign: "center",
-            marginTop: "0px",
-            marginBottom: "0px",
-          }}
-        >
-          <Features
-            feature="$299 Setup Fee"
-            content="(One-Time, 2 year contract)"
-          />
-          <Features
-            feature="Custom Website"
-            content="(React JS delivering quick sites)"
-          />
-          <Features
-            feature="Online Ordering"
-            content="(20% fee on all online orders)"
-          />
-          <Features
-            feature="Instagram & Facebook Management"
-            content="(Content uploads & targeted marketing)"
-          />
-          <Features
-            feature="Professional Photography"
-            content="(Once/Quarter)"
-          />
-          <Features
-            feature="Website Hosting"
-            content="(Maintenance & Security)"
-          />
-          <Features
-            feature="Search Engine Optimization"
-            content="(Continuous content deployment)"
-          />
-          <Features
-            feature="In-Store Marketing Collateral"
-            content="(Takeout menus etc.)"
-          />
-          <SectionRow>
-            <Link to="/sign-up">
-              <Button>SIGN UP</Button>
-            </Link>
-          </SectionRow>
-        </SectionRow>
+    <SectionRow id="pricing" style={{ height: "100vh" }}>
+      <SectionRow style={{ textAlign: "center" }}>
+        <Banner
+          style={{ width: "90vw", marginBottom: "1.5rem" }}
+          titleSmall="digital marketing package"
+          subtitle="your customers will never leave your website when ordering online. With menu images, upsales, and social media integration, get the world's most powerful online ordering solution."
+        />
+        <Features
+          feature="$299 Setup Fee"
+          content="(One-time, 2 year contract)"
+        />
+        <Features
+          feature="Custom Website"
+          content="(React JS delivering quick sites)"
+        />
+        <Features
+          feature="Online Ordering"
+          content="(20% fee on all online orders)"
+        />
+        <Features
+          feature="Instagram & Facebook Management"
+          content="(Content uploads & targeted marketing)"
+        />
+        <Features
+          feature="Professional Photography"
+          content="(One session/quarter)"
+        />
+        <Features
+          feature="Website Hosting"
+          content="(Maintenance & security)"
+        />
+        <Features
+          feature="Search Engine Optimization"
+          content="(Continuous content deployment)"
+        />
+        <Features
+          feature="In-Store Marketing Collateral"
+          content="(Takeout menus, etc.)"
+        />
+        <Link to="/sign-up">
+          <Button style={{ marginTop: "4rem" }}>Sign Up</Button>
+        </Link>
       </SectionRow>
     </SectionRow>
 

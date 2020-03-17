@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-const Button = ({ children }) => {
-  return <ButtonWrapper>{children}</ButtonWrapper>
+const Button = ({ children, style }) => {
+  return <ButtonWrapper style={style}>{children}</ButtonWrapper>
 }
 
 const ButtonWrapper = styled.button`

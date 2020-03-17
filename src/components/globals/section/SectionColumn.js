@@ -2,11 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const SectionColumn = ({ children, style }) => {
-  return (
-    <SectionWrapper style={style}>
-      {children}
-    </SectionWrapper>
-  )
+  return <SectionWrapper style={style}>{children}</SectionWrapper>
 }
 
 const SectionWrapper = styled.div`
