@@ -26,6 +26,7 @@ const IndexPage = () => (
         </Link>
       </Banner>
     </HeaderIndex>
+
     <SectionRow>
       <Services
         style={{ margin: "0px 10px" }}
@@ -34,6 +35,7 @@ const IndexPage = () => (
       />
       <img src={imgSample} alt="sample" width="400px" />
     </SectionRow>
+
     <SectionRow style={{ alignItems: "flex-start" }}>
       <SectionColumn>
         <Services
@@ -50,6 +52,7 @@ const IndexPage = () => (
         <img src={imgSample} alt="sample" width="400px" />
       </SectionColumn>
     </SectionRow>
+
     <SectionRow style={{ flexDirection: "row-reverse" }}>
       <Services
         style={{ margin: "0px 10px" }}
@@ -58,6 +61,7 @@ const IndexPage = () => (
       />
       <img src={imgSample} alt="sample" width="400px" />
     </SectionRow>
+
     <SectionRow>
       <Services
         style={{ margin: "0px 10px" }}
@@ -66,6 +70,7 @@ const IndexPage = () => (
       />
       <img src={imgSample} alt="sample" width="400px" />
     </SectionRow>
+
     <SectionRow>
       <SectionRow style={{ margin: "0px 25px" }}>
         <h2>ONLINE ORDERING</h2>
@@ -89,6 +94,7 @@ const IndexPage = () => (
         />
       </SectionRow>
     </SectionRow>
+
     <SectionRow style={{ marginBottom: "0px" }}>
       <SectionRow
         style={{
@@ -153,6 +159,7 @@ const IndexPage = () => (
         </SectionRow>
       </SectionRow>
     </SectionRow>
+
     <SectionColumn style={{ margin: "20px auto" }}>
       <Testimonials
         content="I have worked with Restaurant Marketing Hawaii's team for several years now. They're an intelligent and very workable group to have on your side. More importantly, their creativity through their content creation is amazing."
