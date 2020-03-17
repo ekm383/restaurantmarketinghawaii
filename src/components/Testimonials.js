@@ -11,6 +11,7 @@ const Testimonials = ({ content, author, restaurant }) => {
 }
 
 const TestimonialWrapper = styled.div`
+  width: 400px;
   display: flex;
   flex-direction: column;
   h5 {

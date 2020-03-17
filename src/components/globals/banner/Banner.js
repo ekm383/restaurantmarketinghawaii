@@ -15,6 +15,7 @@ const Banner = ({ style, title, titleSmall, subtitle, children }) => {
 const BannerWrapper = styled.div`
   width: 50vw;
   margin-left: 3rem;
+  color: var(--white);
   .title,
   .subtitle {
     margin-bottom: 10px;

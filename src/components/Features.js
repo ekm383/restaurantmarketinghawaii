@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Features = ({ feature, content, style }) => {
+const Features = ({ heading, subheading, content, style }) => {
   return (
     <FeaturesWrapper style={style}>
       <div>
-        <h4>{feature}</h4>
+        <h2>{heading}</h2>
+        <h4>{subheading}</h4>
         <p>{content}</p>
       </div>
     </FeaturesWrapper>

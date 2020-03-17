@@ -35,6 +35,16 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: ["/"],
+        excludePaths: ["/contact/sign-up"],
+        height: 4,
+        prependToBody: false,
+        color: `#5cb2d2`
+      }
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [

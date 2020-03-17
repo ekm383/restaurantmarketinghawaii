@@ -47,9 +47,6 @@ class Footer extends Component {
           </div>
           <div className="box map">map</div>
         </div>
-        <div className="copyright">
-          Copyright &copy; 2020 | Restaurant Marketing Hawaii
-        </div>
       </FooterWrapper>
     )
   }
@@ -75,13 +72,6 @@ const FooterWrapper = styled.div`
     font-size: 2rem;
     line-height: 6rem;
     margin-right: 5px;
-  }
-  .copyright {
-    font-size: 0.6rem;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background: black;
   }
 `
 
