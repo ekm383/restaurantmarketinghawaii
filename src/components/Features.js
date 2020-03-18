@@ -14,11 +14,20 @@ const Features = ({ heading, subheading, content, style }) => {
 }
 
 const FeaturesWrapper = styled.div`
-  width: 400px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-basis: 48%;
+  margin-bottom: 1rem;
+  h4 {
+    color: var(--mainBlue);
+  }
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    h2 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
 `
 
 export default Features
