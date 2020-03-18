@@ -41,8 +41,8 @@ module.exports = {
         excludePaths: ["/contact/sign-up"],
         height: 4,
         prependToBody: false,
-        color: `#5cb2d2`
-      }
+        color: `#5cb2d2`,
+      },
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
