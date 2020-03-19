@@ -20,7 +20,7 @@ const NavBarHeader = ({ handleNavBar }) => {
 }
 
 const HeaderWrapper = styled.div`
-  padding: 0.4rem;
+  padding: 1rem 0rem 0.9rem 0.5rem;
   margin-right: 1rem;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ const HeaderWrapper = styled.div`
     font-weight: 700;
     letter-spacing: 2px;
     margin-left: 10px;
-    color: var(--mainBlue)
+    color: var(--mainBlue);
   }
   a {
     text-decoration: none;
