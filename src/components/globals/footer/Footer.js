@@ -25,44 +25,44 @@ class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <div className="footerContainer">
-          <div className="box contact">
-            <h4>Contact Information</h4>
-            <p>
-              1311 Kapiolani Blvd Suite
-              <br />
-              509 Honolulu, Hawaii 96814
-            </p>
-            <p>(808) 123-4567</p>
-            {this.state.icons.map(item => (
-              <a
-                href={item.path}
-                key={item.id}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {item.icon}
-              </a>
-            ))}
-          </div>
-          <div className="box map">map</div>
+        <div className="box contact">
+          <h4>Contact Information</h4>
+          <p>
+            1311 Kapiolani Blvd Suite
+            <br />
+            509 Honolulu, Hawaii 96814
+          </p>
+          <p>(808) 123-4567</p>
+          {this.state.icons.map(item => (
+            <a
+              href={item.path}
+              key={item.id}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.icon}
+            </a>
+          ))}
         </div>
+        <div className="box map">map</div>
       </FooterWrapper>
     )
   }
 }
 
 const FooterWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 4rem;
   background: var(--darkGray);
   color: var(--white);
-  .footerContainer {
-    display: flex;
-    flex-wrap: wrap;
+  p {
+    font-size: 0.8rem;
   }
   .box {
-    flex: 25%;
-    padding: 4rem;
+    flex-basis: 40%;
+    padding: 3rem;
   }
   .map {
     background: lightgray;
@@ -72,6 +72,11 @@ const FooterWrapper = styled.div`
     font-size: 2rem;
     line-height: 6rem;
     margin-right: 5px;
+  }
+  @media (max-width: 768px) {
+    .box {
+      flex-basis: 100%;
+    }
   }
 `
 

@@ -6,8 +6,8 @@ const HeaderPage = ({ img, children }) => {
 }
 
 const IndexHeader = styled.header`
-  min-height: calc(25vh - 68px);
-  background: url(${props => props.img}) center/cover fixed no-repeat;
+  min-height: calc(20vh - 68px);
+  background: url(${props => props.img}) center repeat;
   display: flex;
   justify-content: flex-start;
   align-items: center;

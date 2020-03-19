@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
 const Copyright = () => {
   return (
@@ -13,13 +13,12 @@ const CopyrightWrapper = styled.div`
   width: 100vw;
   position: fixed;
   bottom: 0;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  font-size: 0.7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
   text-align: center;
   color: var(--white);
   background: var(--mainBlue);
-  
 `
 
-export default Copyright;
+export default Copyright

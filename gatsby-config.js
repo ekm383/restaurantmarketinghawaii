@@ -52,6 +52,10 @@ module.exports = {
             family: `Open Sans`,
             variants: [`400`, `700`],
           },
+          {
+            family: `Playfair Display`,
+            variants: [`400`, `600`],
+          }
         ],
       },
     },

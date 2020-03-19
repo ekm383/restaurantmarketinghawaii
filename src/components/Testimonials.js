@@ -1,21 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
-const Testimonials = ({ content, author, restaurant }) => {
+const Testimonials = ({ style, content, author, restaurant }) => {
   return (
-    <TestimonialWrapper>
+    <TestimonialWrapper style={style}>
       <p>{content}</p>
-      <h5>{author}, {restaurant}</h5>
+      <h5>{author}</h5>
     </TestimonialWrapper>
   )
 }
 
 const TestimonialWrapper = styled.div`
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+  width: 50%;
   h5 {
     margin: 10px 0px;
+    line-height: 1.4rem;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `
 
