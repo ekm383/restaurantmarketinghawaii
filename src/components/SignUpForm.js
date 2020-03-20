@@ -4,7 +4,12 @@ import styled from "styled-components"
 const SignUpForm = () => {
   return (
     <FormWrapper>
-      <form name="signup" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+      <form
+        name="signup"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+      >
         <h6>Personal Information</h6>
         <ul class="form-list">
           <li class="form-list__row">
