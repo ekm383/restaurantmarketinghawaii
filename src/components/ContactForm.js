@@ -30,7 +30,7 @@ const ContactForm = () => {
               />
             </label>
           </li>
-          <li>
+          <li class="form-list__row">
             <div data-netlify-recaptcha="true"></div>
           </li>
           <li>

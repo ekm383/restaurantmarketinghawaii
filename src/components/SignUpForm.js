@@ -113,7 +113,7 @@ const SignUpForm = () => {
           <li>
             <div data-netlify-recaptcha="true"></div>
           </li>
-          <li>
+          <li class="form-list__row">
             <button type="submit" class="button">
               sign up
             </button>
