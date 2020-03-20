@@ -110,10 +110,10 @@ const SignUpForm = () => {
               <input id="checks" type="text" name="checks" required="" />
             </label>
           </li>
-          <li>
+          <li class="form-list__row">
             <div data-netlify-recaptcha="true"></div>
           </li>
-          <li class="form-list__row">
+          <li>
             <button type="submit" class="button">
               sign up
             </button>
