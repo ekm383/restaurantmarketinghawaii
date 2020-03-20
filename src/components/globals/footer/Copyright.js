@@ -13,7 +13,8 @@ const CopyrightWrapper = styled.div`
   width: 100vw;
   position: fixed;
   bottom: 0;
-  padding: 1rem 0rem 1rem 3rem;
+  text-align: center;
+  padding: 1rem 0rem 1rem 0rem;
   font-size: 0.8rem;
   color: var(--white);
   background: var(--mainBlue);
