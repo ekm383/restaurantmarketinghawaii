@@ -16,7 +16,11 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title="Home"
+      description="Restaurant Marketing Hawaii is a full-service digital marketing agency. Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
+      keywords={[`Restaurant Marketing`, `Hawaii Restaurant`, `Hawaii Marketing`]}
+    />
     <HeaderIndex img={imgIndex}>
       <Section style={{ width: "100vw", alignItems: "center" }}>
         <Banner

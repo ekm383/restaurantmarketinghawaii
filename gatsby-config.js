@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Restaurant Marketing Hawaii`,
-    description: `We are a full-service digital marketing agency designed specifically for Hawaii's Restaurants. From content creation to e-commerce we provide all the services needed to stay relevant. `,
+    description: `Restaurant Marketing Hawaii is a full-service digital marketing agency. Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results.`,
     author: `@restaurantmarketinghawaii`,
+    image: '/restaurant-marketing-hawaii.png',
+    siteURL: 'https://restaurantmarketinghawaii.netlify.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,7 +33,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/rmh-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

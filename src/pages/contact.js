@@ -11,8 +11,11 @@ import ContactForm from "../components/ContactForm"
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
-      <HeaderPage img={imgContact} />
+      <SEO
+        title="Contact"
+        description="Restaurant Marketing Hawaii is a full-service digital marketing agency. Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
+        keywords={[`Restaurant Marketing`, `Hawaii Restaurant`, `Hawaii Marketing`]}
+      />      <HeaderPage img={imgContact} />
       <Section style={{ flexDirection: "column", margin: "20px auto" }}>
         <Intro heading="Who We Are" />
         <Testimonials

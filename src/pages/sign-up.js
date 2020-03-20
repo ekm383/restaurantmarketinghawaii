@@ -10,8 +10,11 @@ import SignUpForm from "../components/SignUpForm"
 const SignUp = () => {
   return (
     <Layout>
-      <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
-      <HeaderPage img={imgContact} />
+      <SEO
+        title="Sign Up"
+        description="Restaurant Marketing Hawaii is a full-service digital marketing agency. Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
+        keywords={[`Restaurant Marketing`, `Hawaii Restaurant`, `Hawaii Marketing`]}
+      />      <HeaderPage img={imgContact} />
       <Section style={{ marginTop: "20px" }}>
         <Intro heading="sign up" />
       </Section>
