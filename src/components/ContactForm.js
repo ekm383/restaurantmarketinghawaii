@@ -4,7 +4,7 @@ import styled from "styled-components"
 const ContactForm = () => {
   return (
     <FormWrapper>
-      <form>
+      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <ul class="form-list">
           <li class="form-list__row">
             <label htmlFor="name">
@@ -29,6 +29,9 @@ const ContactForm = () => {
                 required=""
               />
             </label>
+          </li>
+          <li>
+            <div data-netlify-recaptcha="true"></div>
           </li>
           <li>
             <button type="submit" class="button">
