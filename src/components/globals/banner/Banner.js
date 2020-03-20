@@ -1,21 +1,40 @@
 import React from "react"
 import styled from "styled-components"
+import animation from '../../../images/animation.gif'
 
 const Banner = ({ style, title, titleSmall, subtitle, children }) => {
   return (
     <BannerWrapper style={style}>
-      <h1 className="title">{title}</h1>
-      <h2 className="titleSmall">{titleSmall}</h2>
-      <h3 className="subtitle">{subtitle}</h3>
-      {children}
+      <div className="box">
+        <h1 className="title">{title}</h1>
+        <h2 className="titleSmall">{titleSmall}</h2>
+        <h3 className="subtitle">{subtitle}</h3>
+        {children}
+      </div>
+      <div className="box">
+        <img
+          style={{ margin: "0 auto" }}
+          src={animation}
+          alt="animation"
+        />
+      </div>
     </BannerWrapper>
   )
 }
 
 const BannerWrapper = styled.div`
-  flex-basis: 40%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-left: 3rem;
   color: var(--white);
+  .box {
+    flex-basis: 40%;
+  }
+  img {
+    width: 100%;
+  }
   .title,
   .subtitle {
     margin-top: 20px;
@@ -36,7 +55,14 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 768px) {
     flex-basis: 100%;
+    justify-content: flex-start;
     margin-left: 1rem;
+    .box {
+      flex-basis: 100%;
+    }
+    img {
+    width: 90%;
+    }
     .titleSmall {
       font-size: 2rem;
       line-height: 2rem;

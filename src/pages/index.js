@@ -12,7 +12,6 @@ import Section from "../components/globals/section/Section"
 import Features from "../components/Features"
 import Testimonials from "../components/Testimonials"
 import imgIndex from "../images/bg/header-home.jpg"
-import animation from "../images/animation.gif"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 const IndexPage = () => (
@@ -28,12 +27,7 @@ const IndexPage = () => (
             <ButtonWhite>SIGN UP</ButtonWhite>
           </AniLink>
         </Banner>
-        <img
-          style={{ margin: "0 auto" }}
-          src={animation}
-          alt="animation"
-          width="50%"
-        />
+
       </Section>
     </HeaderIndex>
 
