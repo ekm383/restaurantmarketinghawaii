@@ -67,7 +67,7 @@ export default class Chart extends Component {
         <Line
           data={this.state.rmhData}
           options={{
-            title: { display: true, text: "Profit over time" },
+            title: { display: true, text: "Profit over Time" },
             legend: { display: true, position: "top" },
           }}
         />

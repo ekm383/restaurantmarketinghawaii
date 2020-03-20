@@ -36,9 +36,10 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 768px) {
     flex-basis: 100%;
+    margin-left: 1rem;
     .titleSmall {
-      font-size: 3rem;
-      line-height: 2.5rem;
+      font-size: 2rem;
+      line-height: 2rem;
     }
     .subtitle {
       font-size: 0.8rem;

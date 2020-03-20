@@ -21,11 +21,16 @@ const FeaturesWrapper = styled.div`
   }
   @media (max-width: 768px) {
     flex-basis: 100%;
+    margin-bottom: 0.7rem;
     h2 {
       font-size: 1.3rem;
     }
     h4 {
       font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.7rem;
+      line-height: 1rem;
     }
   }
 `

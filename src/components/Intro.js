@@ -26,6 +26,10 @@ const IntroWrapper = styled.div`
       font-size: 1.2rem;
       margin-bottom: 0rem;
     }
+    p {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+    }
   }
 `
 
