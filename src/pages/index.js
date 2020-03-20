@@ -1,17 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import SEO from "../components/seo"
 import HeaderIndex from "../components/globals/header/HeaderIndex"
 import Banner from "../components/globals/banner/Banner"
 import Button from "../components/globals/button/Button"
 import ButtonWhite from "../components/globals/button/ButtonWhite"
-import Graph from "../components/Graph"
+import Chart from "../components/Chart"
 import Intro from "../components/Intro"
 import Section from "../components/globals/section/Section"
 import Features from "../components/Features"
 import Testimonials from "../components/Testimonials"
 import imgIndex from "../images/bg/header-home.jpg"
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 const IndexPage = () => (
   <Layout>
@@ -21,15 +22,14 @@ const IndexPage = () => (
         title="Restaurant Marketing Hawaii"
         subtitle="Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
       >
-        <Link to="/sign-up">
+        <AniLink fade to="/sign-up">
           <ButtonWhite>SIGN UP</ButtonWhite>
-        </Link>
+        </AniLink>
       </Banner>
     </HeaderIndex>
 
     <Section id="budget" style={{ height: "100vh" }}>
-      <Graph />
-      <Graph />
+      <Chart />
     </Section>
 
     <Section id="services" style={{ height: "100vh" }}>
@@ -109,16 +109,27 @@ const IndexPage = () => (
         subheading="In-Store Marketing Collateral"
         content="(Takeout menus, etc.)"
       ></Features>
-      <Link to="/sign-up">
+      <AniLink fade to="/sign-up">
         <Button>SIGN UP</Button>
-      </Link>
+      </AniLink>
     </Section>
 
-    <Section style={{ flexDirection: "column", margin: "20px auto" }}>
+    <Section
+      style={{
+        width: "100vw",
+        flexDirection: "column",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        background: "var(--mainBlue)",
+      }}
+    >
+      <FaQuoteLeft style={{ margin: "15px", color: "white" }} />
       <Testimonials
+        style={{ color: "white" }}
         content="I have worked with Restaurant Marketing Hawaii's team for several years now. They're an intelligent and very workable group to have on your side. More importantly, their creativity through their content creation is amazing."
         author="David Chang, Little Village Noodle House"
       />
+      <FaQuoteRight style={{ margin: "15px", color: "white" }} />
     </Section>
   </Layout>
 )

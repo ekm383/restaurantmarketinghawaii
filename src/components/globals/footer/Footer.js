@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import map from "../../../images/bg/restaurant-marketing-hawaii-map.jpg"
 import { FaInstagram, FaFacebook, FaGoogle } from "react-icons/fa"
 
 class Footer extends Component {
@@ -44,7 +45,9 @@ class Footer extends Component {
             </a>
           ))}
         </div>
-        <div className="box map">map</div>
+        <div className="box map">
+          <img src={map} alt="map" width="100%" height="auto" />
+        </div>
       </FooterWrapper>
     )
   }
@@ -54,7 +57,6 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 4rem;
   background: var(--darkGray);
   color: var(--white);
   p,
@@ -62,11 +64,12 @@ const FooterWrapper = styled.div`
     font-size: 0.8rem;
   }
   .box {
-    flex-basis: 40%;
+    flex-basis: 45%;
     padding: 3rem;
   }
   .map {
     background: lightgray;
+    padding: 0;
   }
   a {
     color: var(--white);

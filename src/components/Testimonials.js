@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Testimonials = ({ style, content, author, restaurant }) => {
+const Testimonials = ({ style, content, author }) => {
   return (
     <TestimonialWrapper style={style}>
       <p>{content}</p>
@@ -17,7 +17,8 @@ const TestimonialWrapper = styled.div`
     line-height: 1.4rem;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
+    margin: 0px auto;
   }
 `
 
