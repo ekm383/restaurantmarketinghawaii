@@ -57,7 +57,7 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: var(--darkGray);
+  background: var(--gray);
   color: var(--white);
   p,
   .phone {

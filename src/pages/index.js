@@ -12,20 +12,29 @@ import Section from "../components/globals/section/Section"
 import Features from "../components/Features"
 import Testimonials from "../components/Testimonials"
 import imgIndex from "../images/bg/header-home.jpg"
+import animation from "../images/animation.gif"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HeaderIndex img={imgIndex}>
-      <Banner
-        title="Restaurant Marketing Hawaii"
-        subtitle="Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
-      >
-        <AniLink fade to="/sign-up">
-          <ButtonWhite>SIGN UP</ButtonWhite>
-        </AniLink>
-      </Banner>
+      <Section style={{ width: "100vw", alignItems: "center" }}>
+        <Banner
+          titleSmall="Restaurant Marketing Hawaii"
+          subtitle="Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
+        >
+          <AniLink fade to="/sign-up">
+            <ButtonWhite>SIGN UP</ButtonWhite>
+          </AniLink>
+        </Banner>
+        <img
+          style={{ margin: "0 auto" }}
+          src={animation}
+          alt="animation"
+          width="50%"
+        />
+      </Section>
     </HeaderIndex>
 
     <Section id="budget" style={{ height: "100vh" }}>

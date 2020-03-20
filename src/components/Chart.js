@@ -113,6 +113,7 @@ const ChartWrapper = styled.div`
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .box {
     flex-basis: 47%;
@@ -121,6 +122,13 @@ const ChartWrapper = styled.div`
     text-decoration: underline;
   }
   @media (max-width: 768px) {
-    flex-basis: 100%;
+    flex-basis: 90%;
+    .container {
+      width: 80%;
+    }
+    .box {
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
   }
 `

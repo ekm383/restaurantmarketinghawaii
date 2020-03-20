@@ -13,26 +13,38 @@ const Banner = ({ style, title, titleSmall, subtitle, children }) => {
 }
 
 const BannerWrapper = styled.div`
-  width: 50vw;
+  flex-basis: 40%;
   margin-left: 3rem;
   color: var(--white);
   .title,
   .subtitle {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3.5rem;
     text-transform: uppercase;
   }
   .titleSmall {
-    font-size: 2rem;
-    line-height: 1.8rem;
-    margin-bottom: 0.5rem;
+    line-height: 4rem;
   }
   .subtitle {
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    .titleSmall {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+    .subtitle {
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 1.2rem;
+    }
   }
 `
 
