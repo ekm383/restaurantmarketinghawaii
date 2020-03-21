@@ -33,7 +33,7 @@ class Footer extends Component {
             <br />
             509 Honolulu, Hawaii 96814
           </p>
-          <p className="phone">(808) 123-4567</p>
+          <p className="phone">(808) 258-2505</p>
           {this.state.icons.map(item => (
             <a
               href={item.path}
@@ -82,8 +82,8 @@ const FooterWrapper = styled.div`
       flex-basis: 100%;
     }
     .phone {
-    font-size: 0.8rem;
-  }
+      font-size: 0.8rem;
+    }
   }
 `
 
