@@ -115,9 +115,9 @@ const SignUpForm = () => {
               <input id="checks" type="text" name="checks" required="" />
             </label>
           </li>
-          <li class="form-list__row">
+          <div class="field">
             <div data-netlify-recaptcha="true"></div>
-          </li>
+          </div>
           <li>
             <button type="submit" class="button">
               sign up
