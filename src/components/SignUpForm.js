@@ -141,7 +141,7 @@ const FormWrapper = styled.div`
     height: 30px;
     margin-top: 1rem;
   }
-  .visuallyhidden {
+  /* .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -150,7 +150,7 @@ const FormWrapper = styled.div`
     padding: 0;
     position: absolute;
     width: 1px;
-  }
+  } */
 
   .button {
     color: #ffffff;

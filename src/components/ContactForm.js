@@ -52,7 +52,7 @@ const ContactForm = () => {
 const FormWrapper = styled.div`
   width: 80%;
   padding-bottom: 4rem;
-  .visuallyhidden {
+  /* .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -61,7 +61,7 @@ const FormWrapper = styled.div`
     padding: 0;
     position: absolute;
     width: 1px;
-  }
+  } */
 
   .button {
     color: #ffffff;
