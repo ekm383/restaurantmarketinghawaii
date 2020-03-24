@@ -7,9 +7,15 @@ const ContactForm = () => {
       <form
         name="contact"
         method="POST"
-        data-netlify-recaptcha="true"
+        netlify-honeypot="bot-field"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="contact" />
+        <li id="hidden">
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
+        </li>
         <ul class="form-list">
           <li class="form-list__row">
             <label htmlFor="name">
@@ -35,9 +41,6 @@ const ContactForm = () => {
               />
             </label>
           </li>
-          <div class="field">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
           <li>
             <button type="submit" class="button">
               let's talk
@@ -52,6 +55,10 @@ const ContactForm = () => {
 const FormWrapper = styled.div`
   width: 80%;
   padding-bottom: 4rem;
+
+  #hidden {
+    display: none;
+  }
   /* .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);

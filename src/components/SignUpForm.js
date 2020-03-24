@@ -7,9 +7,15 @@ const SignUpForm = () => {
       <form
         name="signup"
         method="POST"
-        data-netlify-recaptcha="true"
+        netlify-honeypot="bot-field"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="signup" />
+        <li id="hidden">
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
+        </li>
         <h6>Personal Information</h6>
         <ul class="form-list">
           <li class="form-list__row">
@@ -115,9 +121,6 @@ const SignUpForm = () => {
               <input id="checks" type="text" name="checks" required="" />
             </label>
           </li>
-          <div class="field">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
           <li>
             <button type="submit" class="button">
               sign up
@@ -140,6 +143,10 @@ const FormWrapper = styled.div`
     width: 50%;
     height: 30px;
     margin-top: 1rem;
+  }
+
+  #hidden {
+    display: none;
   }
   /* .visuallyhidden {
     border: 0;
