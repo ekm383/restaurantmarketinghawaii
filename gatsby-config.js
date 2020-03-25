@@ -3,10 +3,18 @@ module.exports = {
     title: `Restaurant Marketing Hawaii`,
     description: `Restaurant Marketing Hawaii is a full-service digital marketing agency. Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results.`,
     author: `@restaurantmarketinghawaii`,
-    image: '/restaurant-marketing-hawaii.png',
-    siteURL: 'https://restaurantmarketinghawaii.netlify.com'
+    image: "/restaurant-marketing-hawaii.png",
+    siteURL: "https://restaurantmarketinghawaii.netlify.com",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-118443497-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -57,7 +65,7 @@ module.exports = {
           {
             family: `Playfair Display`,
             variants: [`400`, `600`],
-          }
+          },
         ],
       },
     },
